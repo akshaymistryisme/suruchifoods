@@ -98,7 +98,6 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
-
     header {
         position: relative;
         /* max-width: 90%; */
@@ -157,7 +156,12 @@ nav ul li a:hover {
     }
 }
 
-.section1 {
+@media (max-width: 1024px) {
+    nav ul li {
+        font-size: 32px;
+    }
+}
+/* .section1 {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -171,23 +175,46 @@ nav ul li a:hover {
 .section1 .info {
     width: 40%;
     /* max-height: 700px;
-    overflow: hidden; */
-    /* background-color: blue; */
+    overflow: hidden; 
     margin-right: 50px;
-
 }
 
 .section1 .pic {
-
     width: 40%;
-    /* background-color: red; */
     padding-left: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+} */
+
+.section1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #db4439;
+    margin-top: 0px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    box-sizing: border-box; /* Add this line to include padding in the width */
+    overflow: hidden; /* Add this line to hide overflow content */
 }
 
+.section1 .info {
+    width: 40%;
+    margin-right: 50px;
+    box-sizing: border-box; /* Add this line to include padding in the width */
+}
+
+.section1 .pic {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box; /* Add this line to include padding in the width */
+}
 
 .section1 .info h1 {
     font-size: 120px;
@@ -207,7 +234,6 @@ nav ul li a:hover {
 }
 
 .section1 .pic .outer {
-
     background-color: #C5212A;
     margin: 20px;
     transform: rotate(-15deg);
@@ -219,7 +245,6 @@ nav ul li a:hover {
 
 
 .section1 .pic .outer2 {
-
     background-color: #A94438;
     margin: 20px;
     transform: rotate(15deg);
@@ -265,6 +290,91 @@ nav ul li a:hover {
 .section1 .pic .outer2:hover #pic2 {
     transform: rotate(10deg) scale(1);
 }
+
+@media (max-width: 700px) {
+    .section1{
+        flex-direction: column;
+    }
+    .section1 .info {
+        width: 80%;
+        margin-right: 0px;
+    }
+
+    .section1 .pic {
+        width: 80%;
+    }
+
+    .section1 .info h1 {
+        font-size: 75px;
+        line-height: 90px;
+        text-align: center;
+    }
+
+    .section1 .info p {
+        font-size: 35px;
+        line-height: 70px;
+        text-align: center;
+    }
+
+    .section1 .pic .outer{
+        width: 290px;
+        height: 290px;
+    }
+
+    .section1 .pic img{
+        width: 290px;
+        height: 290px;
+    }
+
+    .section1 .pic{
+        padding: 40px;
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section1{
+        flex-direction: column;
+    }
+    /* .section1 .info {
+        width: 80%;
+        margin-right: 0px;
+    }
+
+    .section1 .pic {
+        width: 80%;
+    }
+
+    .section1 .info h1 {
+        font-size: 75px;
+        line-height: 90px;
+        text-align: center;
+    }
+
+    .section1 .info p {
+        font-size: 35px;
+        line-height: 70px;
+        text-align: center;
+    }
+
+    .section1 .pic .outer{
+        width: 290px;
+        height: 290px;
+    }
+
+    .section1 .pic img{
+        width: 290px;
+        height: 290px;
+    }
+    */
+    .section1 .pic{
+        padding: 40px;
+        margin-top: 25px;
+        margin-bottom: 5px;
+    } 
+}
+/* ... (rest of your CSS remains unchanged) */
 
 .section2 marquee {
     display: flex;
@@ -389,7 +499,6 @@ nav ul li a:hover {
     padding-right: 5rem;
 
 }
-
 .section6 .info .sec {
     width: 100%;
 }
@@ -441,7 +550,7 @@ nav ul li a:hover {
     /* box-shadow: 0px 0px 20px gray; */
     transition: 0.3s;
     background-color: #762C26;
-    padding: 5rem;
+    padding: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -459,6 +568,83 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
+@media (max-width: 700px) {
+    .section6 {
+       align-items: center;
+       flex-wrap: wrap;
+    }
+
+    .section6 .photo {
+        width: 100%;
+    }
+
+    .section6 .info {
+        width: 80%;
+        height: auto;
+        padding: 2rem 0rem;
+        margin-top: 20px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+    }
+
+    .section6 .info .sec h1 {
+        font-size: 52px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .section6 .info .sec p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .section6 .info .sec #buttontoaction{
+        margin-left: 25px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section6 {
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       flex-wrap: wrap;
+       overflow: hidden;
+    }
+    
+    .section2 marquee {
+        font-size: 60px;
+    }
+
+    .section6 .photo {
+        width: 80%;
+    }
+ 
+    .section6 .info {
+        width: 80%;
+        height: auto;
+        padding: 2rem 0rem;
+        margin-top: 20px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+    }
+
+    .section6 .info .sec h1 {
+        font-size: 72px;
+        margin-top: 20px;
+    }
+
+    .section6 .info .sec p {
+        font-size: 38px;
+    }
+  
+    .section6 .info .sec #buttontoaction{
+        font-size: 38px;
+    }
+}
 
 .section5 {
     background-color: white;
@@ -501,8 +687,44 @@ nav ul li a:hover {
 }
 
 
+@media (max-width: 700px) {
+    .section5{
+      height: auto;
+      overflow: hidden;
+    }
+    .section5 .sec5-1 {
+        padding-bottom: 0px;
+    }
 
+    .section5 .sec5-2{
+        flex-direction: column;
+        padding: 10px;
+    }
 
+    .section5 .sec5-2 img{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* .section5{
+      height: auto;
+      overflow: hidden;
+    } */
+    .section5 .sec5-1 h3 {
+        margin-top: 10px;
+        font-size: 60px;
+    }
+
+    /* .section5 .sec5-2{
+        flex-direction: column;
+        padding: 10px;
+    }*/
+
+    .section5 .sec5-2 img{
+       width: 13rem;
+    } 
+}
 
 
 .section7 {
@@ -614,6 +836,88 @@ nav ul li a:hover {
     transition: 0.5s;
 }
 
+
+@media (max-width: 700px) {
+    .section7{
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .section7 .info {
+        width: 100%;
+        padding: 20px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .section7 .info .sec h1 {
+        font-size: 18vw;
+        line-height: 75px;
+        text-align: center;
+    }
+
+    .sec7-ul{
+        padding: 0px 30px;
+    }
+
+    .sec7-btn{
+       margin-left: 25px;
+    }
+
+    .section7 .photo {
+       width: 100%;
+    }
+   
+    .section7 .photo img {
+        height: 460px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section7{
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .section7 .info {
+        width: 80%;
+        padding: 40px;
+    }
+
+    .section7 .info .sec li {
+        font-size: 35px;
+    }
+
+    .section7 .info .sec #buttontoaction {
+        font-size: 35px;
+    }
+
+    .section7 .photo {
+        width: 100%;
+     }
+/* 
+    .section7 .info .sec h1 {
+        font-size: 18vw;
+        line-height: 75px;
+        text-align: center;
+    }
+
+    .sec7-ul{
+        padding: 0px 30px;
+    }
+
+    .sec7-btn{
+       margin-left: 25px;
+    }
+
+    
+   
+    .section7 .photo img {
+        height: 460px;
+    } */
+}
+
 .section8 {
     width: 100%;
     background-color: #f1e8db;
@@ -636,6 +940,11 @@ nav ul li a:hover {
     color: #db4439;
 }
 
+@media (max-width: 700px) {
+    .section8 h1 {
+        font-size: 21vw;
+    }
+}
 
 .section9 {
     overflow: hidden;
@@ -677,8 +986,40 @@ nav ul li a:hover {
 }
 
 
+@media (max-width: 700px) {
+    .storeslider{
+        width: 92%;
+    }
 
+    .slider-container img{
+        width: 65%;
+    }
+}
 
+@media (max-width: 1024px) {
+    .section8 p {
+        font-size: 50px;
+        color: #db4439;
+    }
+
+    .storeslider{
+        width: 88%;
+    }
+
+    .slider-container img{
+        width: 65%;
+    }
+
+    .section5 .sec5-1 h3 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 700px) {
+    .section5 img{
+        width: 200px;
+    }
+}
 
 .section10 {
     background-color: #762c26;
@@ -745,11 +1086,49 @@ nav ul li a:hover {
 
 }
 
+@media (max-width: 700px) {
+    .section10{
+        overflow: hidden;
+        padding: 2rem 0rem;
+    }
 
+    .section10 .info{
+        width: 100%;
+        padding: 1rem;
+    }
 
+    .section10 .info .sec h1 {
+        line-height: 85px;
+        font-size: 16vw;
+        margin-bottom: 20px;
+    }
+}
 
+@media (max-width: 1024px) {
+    /* .section10{
+        overflow: hidden;
+        padding: 2rem 0rem;
+    }
 
+    .section10 .info{
+        width: 100%;
+        padding: 1rem;
+    }
 
+    .section10 .info .sec h1 {
+        line-height: 85px;
+        font-size: 16vw;
+        margin-bottom: 20px;
+    } */
+
+    .section10 .info .sec p {
+        font-size: 38px;
+    }
+
+    .section10 .info .sec #buttontoaction{
+        font-size: 38px;
+    }
+}
 .footer {
     background-color: #762c26;
     color: #fff;
@@ -904,11 +1283,48 @@ nav ul li a:hover {
         margin: 20px 0;
         text-align: center;
     }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+    .newsletter-form input[type="email"] {
+        padding: 12px;
+    }
 }
 
+@media (max-width: 1024px) {
+    .footer h4 {
+        font-size: 60px;
+    }
 
+    .footer p {
+        font-size: 32px;
+    }
+
+    .footer-links li {
+        font-size: 32px;
+    }
+
+    .social-icons a {
+        font-size: 40px;
+    }
+
+    .copyright {
+        font-size: 22px;
+    }
+
+    .newsletter-form button {
+        padding: 10px 40px;
+        font-size: 25px;
+    }
+
+    .newsletter-form input[type="email"] {
+        padding: 23px;
+        font-size: 18px;
+    }
+}
 .section11 {
-
     width: 100%;
     display: flex;
     justify-content: center;
@@ -999,7 +1415,6 @@ nav ul li a:hover {
     box-shadow: -5px 5px 0px #762C26;
 }
 
-
 #buttontoaction {
     padding: 20px 40px;
     font-size: 20px;
@@ -1021,6 +1436,55 @@ nav ul li a:hover {
 #buttontoaction:hover {
     box-shadow: 0px 0px 0px #772820;
 }
+
+@media (max-width: 700px) {
+   .content img {
+     width: 300px;
+   }
+
+   #buttontoaction {
+    padding: 15px 35px;
+   }
+
+   .content li {
+    text-align: justify;
+   }
+
+   .content p {
+    margin-top: 10px;
+    text-align: justify;
+   }
+}
+
+@media (max-width: 1024px) {
+    .content img {
+      width: 800px;
+    }
+ 
+    .top-bar .filter-btn {
+        padding: 20px 40px;
+        font-size: 35px;
+    }
+
+    #buttontoaction {
+     font-size: 35px;
+    }
+ 
+    .content ul{
+        padding: 20px;
+    }
+    
+    .content li {
+     font-size: 35px;
+     text-align: justify;
+    }
+ 
+    .content p {
+     font-size: 35px;
+     margin-top: 20px;
+     text-align: justify;
+    }
+ }
 
 .phero {
     margin-inline: auto;
@@ -1063,7 +1527,15 @@ nav ul li a:hover {
     transition: 0.2s;
 }
 
+@media (max-width: 700px) {
+    #portfoliohero {
+        width: 94%;
+    }
 
+    .custom-gallery {
+        margin-bottom: 10px;
+    }
+}
 
 .custom-fullscreen-overlay {
     display: none;
@@ -1092,6 +1564,32 @@ nav ul li a:hover {
     position: absolute;
     top: 20px;
     right: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .custom-fullscreen-overlay  {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .custom-fullscreen-image {
+        max-width: 90%;
+        border-radius: 30px;
+    } 
+}
+
+@media only screen and (max-width: 768px) {
+    .custom-close-btn {
+        font-size: 80px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
