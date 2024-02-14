@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.cdnfonts.com/css/lilita-one" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $("#2002").click(function () {
+                $("#content-2002").show();
+                $("#content-2007").hide();
+                $("#content-2022").hide();
+            });
+            $("#2007").click(function () {
+                $("#content-2002").hide();
+                $("#content-2007").show();
+                $("#content-2022").hide();
+            });
+            $("#2022").click(function () {
+                $("#content-2002").hide();
+                $("#content-2007").hide();
+                $("#content-2022").show();
+            });
+        });
+    </script>
+    <header>
+        <a href="index.html" class="logo"><img src="images/suruchifoodslogo.png" alt=""></a>
+        <div class="mean-toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ourbrands.html">Our Brands</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="outlets.html">Outlets</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="clear"></div>
+    </header>
+
+
+
+    <div class="section11">
+        <h1>Our Outlets</h1>
+    </div>
+
+    <div class="top-bar">
+        <button class="filter-btn" data-filter="all">All Location</button>
+        <button class="filter-btn" data-filter="item1">Maharashtra</button>
+        <button class="filter-btn" data-filter="item2">Gujarat</button>
+        <button class="filter-btn" data-filter="item3">Madhya Pradesh</button>
+        <button class="filter-btn" data-filter="item4">Rajasthan</button>
+        <button class="filter-btn" data-filter="item5">Karnataka</button>
+    </div>
+
+    <div class="content">
+
+        <div class="item item1">
+            <div class="location">
+                <h1>Chatoree</h1>
+                <p>EVA MALL, UNIT NO.TF7/ 8, 3RD FLOOR, PATIDAR CROSSING, 4 RASTA , NEAR SARASWATI COMPLEX,RAMESH PATEL
+                    ESTATE, MANIJALPUR,
+                    Vadodara, Gujarat 390011</p>
+            </div>
+            <div class="location">
+                <h1>Juice Buzz</h1>
+                <p>EVA MALL, UNIT NO.TF7/ 8, 3RD FLOOR, PATIDAR CROSSING, 4 RASTA , NEAR SARASWATI COMPLEX,RAMESH PATEL
+                    ESTATE, MANIJALPUR,
+                    Vadodara, Gujarat 390011</p>
+            </div>
+        </div>
+
+        <div class="item item2">
+        </div>
+
+        <div class="item item3">
+        </div>
+
+        <div class="item item4">
+        </div>
+
+        <div class="item item5">
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Write your Email, we'll reach out to you!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ourbrands.html">Our Brands</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="portfolio.html">Outlets</a></li>
+                    <li><a href="portfolio.html">Outlets</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul class="social-icons">
+                    <li><a href="https://www.instagram.com/chatoree_india?igsh=N2U4MHB2Z2l3YTcw"><i
+                                class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/chatoree_india?igsh=N2U4MHB2Z2l3YTcw"><i
+                                class="fa fa-instagram"></i></a></li>
+                </ul>
+                <p>Contact Us</p>
+                <p>Phone: +91 8080156660</p>
+                <p>Unit No.1, Meher Tiles Compound, Subhash Road, Jogeshwari (E), Mumbai - 400060.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>&copy; 2024 Suruchi Foods. All rights reserved.</p>
+    </div>
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('.filter-btn').on('click', function () {
+                var filterValue = $(this).attr('data-filter');
+
+                if (filterValue === 'all') {
+                    $('.item').show();
+                } else {
+                    $('.item').hide();
+                    $('.' + filterValue).show();
+                }
+            });
+        });
+    </script>
+    <script>
+        const imageContainer = document.querySelector('.slider-container');
+        const imageElements = document.querySelectorAll('.slider-container img');
+        const imageWidth = imageElements[0].clientWidth; // Assuming all images have the same width
+        let counter = 1; // Start from the second image
+
+        function slide() {
+            imageContainer.style.transition = 'transform 0.5s ease';
+            imageContainer.style.transform = `translateX(-${imageWidth * counter}px)`;
+            counter++;
+
+            // Reset counter to 1 when all images have been displayed
+            if (counter === imageElements.length) {
+                counter = 1;
+                setTimeout(() => {
+                    imageContainer.style.transition = 'none';
+                    imageContainer.style.transform = `translateX(-${imageWidth * counter}px)`;
+                }, 500);
+            }
+        }
+
+        setInterval(slide, 5000); // Slide every 5 seconds
+
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.mean-toggle').click(function () {
+                $('.mean-toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+    <script>
+        var images = [
+            'images/7.jpg',
+            'images/8.png',
+            'images/9.jpg',
+            'images/10.jpg',
+            'images/12.jpg',
+        ];
+        var currentIndex = 0;
+        var slider = document.getElementById('slider');
+        slider.src = images[currentIndex];
+        var slideInterval = setInterval(nextSlide, 5000); // Change slide every 3 seconds
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % images.length;
+            slider.style.transition = 'opacity 0.5s ease-in-out';
+            slider.style.opacity = 0;
+            setTimeout(function () {
+                slider.src = images[currentIndex];
+                slider.style.opacity = 1;
+            }, 500); // Delay for smoother transition
+        }
+    </script>
+
+</body>
+
+</html>
