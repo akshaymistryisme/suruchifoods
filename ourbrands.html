@@ -11,6 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -48,13 +49,11 @@
         <div class="clear"></div>
     </header>
 
-
-
-    <div class="section11">
+    <div class="section11" data-aos="fade-up">
         <h1>Our Brands</h1>
     </div>
 
-    <div class="top-bar">
+    <div class="top-bar" data-aos="fade-up" data-aos-offset="300">
         <button class="filter-btn" data-filter="all">All Brands</button>
         <button class="filter-btn" data-filter="item1">Chatoree</button>
         <button class="filter-btn" data-filter="item2">Juice Buzz</button>
@@ -66,8 +65,8 @@
     <div class="content">
         <div class="item item1">
             <!-- <h2>Chatoree</h2> -->
-            <img src="images/chatoree.jpg" alt="Item 1">
-            <p>Indulge in the delightful world of Masaledar Finger Licking Snacks, where every bite is a journey through
+            <img src="images/chatoree.jpg" alt="Item 1" data-aos="fade-up" data-aos-offset="500">
+            <p data-aos="fade-up">Indulge in the delightful world of Masaledar Finger Licking Snacks, where every bite is a journey through
                 savory, spicy,
                 tangy, and sweet flavors crafted to perfection. This brand caters to the discerning palates of
                 Chatorees, those who
@@ -86,7 +85,7 @@
                 Download Brochure PDF
             </button>
         </div>
-        <div class="item item2">
+        <div class="item item2" data-aos="fade-up">
             <!-- <h2>Item 2</h2> -->
             <img src="images/juice buzz.png" alt="Item 2">
             <p>Suruchi Foods unveils its latest venture with a fresh and invigorating concept - Juice Buzz. Building
@@ -116,7 +115,7 @@
             </button>
 
         </div>
-        <div class="item item3">
+        <div class="item item3" data-aos="fade-up">
             <!-- <h2>Item 3</h2> -->
             <img src="images/cb.jpg" alt="Item 3">
             <p>At our establishment, we are dedicated to showcasing the vibrant flavors of local fast food while
@@ -151,7 +150,7 @@
                 Download Brochure PDF
             </button>
         </div>
-        <div class="item item4">
+        <div class="item item4" data-aos="fade-up">
             <!-- <h2>Item 4</h2> -->
             <img src="images/maxx.jpg" alt="Item 4">
             <p>Maxx is a groundbreaking food kiosk chain tailored for the modern era of malls and entertainment zones.
@@ -169,7 +168,7 @@
                 Download Brochure PDF
             </button>
         </div>
-        <div class="item item5">
+        <div class="item item5" data-aos="fade-up">
             <!-- <h2>Item 5</h2> -->
             <img src="images/dd.png" alt="Item 5">
             <p>Celebrating 10 Years of South Indian Excellence
@@ -215,7 +214,7 @@
 
     <footer class="footer">
         <div class="footer-container">
-            <div class="footer-section">
+            <div class="footer-section" data-aos="fade-up">
                 <h4>Newsletter</h4>
                 <p>Write your Email, we'll reach out to you!</p>
                 <form class="newsletter-form">
@@ -223,17 +222,16 @@
                     <button type="submit">Send</button>
                 </form>
             </div>
-            <div class="footer-section">
+            <div class="footer-section" data-aos="fade-up">
                 <h4>Quick Links</h4>
                 <ul class="footer-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="ourbrands.html">Our Brands</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="outlets.html">Outlets</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
+            <div class="footer-section" data-aos="fade-up">
                 <h4>Follow Us</h4>
                 <ul class="social-icons">
                     <li><a href="https://www.instagram.com/chatoree_india?igsh=N2U4MHB2Z2l3YTcw"><i
@@ -248,14 +246,26 @@
         </div>
     </footer>
 
-    <div class="copyright">
+    <div class="copyright" data-aos="fade-up">
         <p>&copy; 2024 Suruchi Foods. All rights reserved.</p>
     </div>
 
 
 
 
+    <!-- animation on scroll  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
 
+    window.addEventListener('load', () => {
+        AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+        })
+    });
+    </script>
 
     <script>
         $(document).ready(function () {
@@ -271,6 +281,7 @@
             });
         });
     </script>
+
     <script>
         const imageContainer = document.querySelector('.slider-container');
         const imageElements = document.querySelectorAll('.slider-container img');
