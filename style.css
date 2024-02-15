@@ -26,6 +26,7 @@ body {
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
+    
     /* background-color: #E4DEBE; */
 }
 
@@ -97,19 +98,19 @@ nav ul li a:hover {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px){
     nav ul li {
         font-size: 32px;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 920px) {
+@media only screen and (min-width: 768px) and (max-width: 920px){
     nav ul li {
         font-size: 30px;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 820px) {
+@media only screen and (min-width: 768px) and (max-width: 820px){
     nav ul li {
         font-size: 23px;
     }
@@ -210,17 +211,14 @@ nav ul li a:hover {
     margin-top: 0px;
     padding-top: 80px;
     padding-bottom: 50px;
-    box-sizing: border-box;
-    /* Add this line to include padding in the width */
-    overflow: hidden;
-    /* Add this line to hide overflow content */
+    box-sizing: border-box; /* Add this line to include padding in the width */
+    overflow: hidden; /* Add this line to hide overflow content */
 }
 
 .section1 .info {
     width: 40%;
     margin-right: 50px;
-    box-sizing: border-box;
-    /* Add this line to include padding in the width */
+    box-sizing: border-box; /* Add this line to include padding in the width */
 }
 
 .section1 .pic {
@@ -229,8 +227,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-sizing: border-box;
-    /* Add this line to include padding in the width */
+    box-sizing: border-box; /* Add this line to include padding in the width */
 }
 
 .section1 .info h1 {
@@ -308,36 +305,33 @@ nav ul li a:hover {
     transform: rotate(10deg) scale(1);
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .section1 {
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .section1{
         flex-direction: column;
     }
-
-    .section1 .info {
+   .section1 .info {
         width: 80%;
         margin-right: 0px;
     }
-
-    /* 
+ /* 
     .section1 .pic {
         width: 80%;
     } */
-
+   
 
     .section1 .info h1 {
         /* font-size: 75px;
         line-height: 90px; */
         text-align: center;
     }
-
-
+    
+    
     .section1 .info p {
         /* font-size: 35px;
         line-height: 70px; */
         text-align: center;
     }
-
-    /*
+/*
     .section1 .pic .outer{
         width: 290px;
         height: 290px;
@@ -348,18 +342,17 @@ nav ul li a:hover {
         height: 290px;
     }
     */
-    .section1 .pic {
+    .section1 .pic{
         padding: 40px;
         margin-top: 25px;
         margin-bottom: 5px;
-    }
+    } 
 }
 
 @media (max-width: 700px) {
-    .section1 {
+    .section1{
         flex-direction: column;
     }
-
     .section1 .info {
         width: 80%;
         margin-right: 0px;
@@ -381,24 +374,24 @@ nav ul li a:hover {
         text-align: center;
     }
 
-    .section1 .pic .outer {
+    .section1 .pic .outer{
         width: 290px;
         height: 290px;
     }
 
-    .section1 .pic img {
+    .section1 .pic img{
         width: 290px;
         height: 290px;
     }
 
-    .section1 .pic {
+    .section1 .pic{
         padding: 40px;
         margin-top: 25px;
         margin-bottom: 5px;
     }
 }
 
-@media (max-width: 280px) {
+@media (max-width: 280px){
     .section1 .info h1 {
         font-size: 55px;
         line-height: 65px;
@@ -537,7 +530,6 @@ nav ul li a:hover {
     padding-right: 5rem;
 
 }
-
 .section6 .info .sec {
     width: 100%;
 }
@@ -606,16 +598,15 @@ nav ul li a:hover {
     height: 100%;
     object-fit: cover;
 }
-
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .section6 {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        overflow: hidden;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       flex-wrap: wrap;
+       overflow: hidden;
     }
-
+    
     .section2 marquee {
         font-size: 60px;
     }
@@ -623,7 +614,7 @@ nav ul li a:hover {
     .section6 .photo {
         width: 80%;
     }
-
+ 
     .section6 .info {
         width: 80%;
         height: auto;
@@ -642,19 +633,22 @@ nav ul li a:hover {
     .section6 .info .sec p {
         font-size: 38px;
     }
-
-    .section6 .info .sec #buttontoaction {
+  
+    .section6 .info .sec #buttontoaction{
         font-size: 38px;
     }
 }
-
 @media (max-width: 700px) {
     .section6 {
-        align-items: center;
-        flex-wrap: wrap;
+       align-items: center;
+       flex-wrap: wrap;
     }
 
     .section6 .photo {
+        width: 100%;
+    }
+
+    .section6 .photo img {
         width: 100%;
     }
 
@@ -679,12 +673,17 @@ nav ul li a:hover {
         text-align: center;
     }
 
-    .section6 .info .sec #buttontoaction {
+    .section6 .info .sec #buttontoaction{
         margin-left: 25px;
         margin-bottom: 10px;
     }
 }
 
+@media (max-width: 844px) {
+    .section6 .photo img {
+        width: 100%;
+    }
+}
 
 
 .section5 {
@@ -727,8 +726,11 @@ nav ul li a:hover {
     width: 10rem;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.icon .sec5-2 img{
+    width: 80%;
+}
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     /* .section5{
       height: auto;
       overflow: hidden;
@@ -743,32 +745,36 @@ nav ul li a:hover {
         padding: 10px;
     }*/
 
-    .section5 .sec5-2 img {
-        width: 13rem;
-    }
+    .section5 .sec5-2 img{
+       width: 13rem;
+    } 
 }
 
 
 @media (max-width: 700px) {
-    .section5 {
-        height: auto;
-        overflow: hidden;
+    .section5{
+      height: auto;
+      overflow: hidden;
     }
-
     .section5 .sec5-1 {
         padding-bottom: 0px;
     }
 
-    .section5 .sec5-2 {
+    .section5 .sec5-2{
         flex-direction: column;
         padding: 10px;
     }
 
-    .section5 .sec5-2 img {
+    .section5 .icons img{
         margin-bottom: 10px;
     }
 }
 
+@media (max-width: 400px) {
+    .icon .sec5-2 img{
+        width: 100%;
+    }
+}
 
 
 .section7 {
@@ -881,7 +887,7 @@ nav ul li a:hover {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .section7 {
+    .section7{
         flex-direction: column;
         overflow: hidden;
     }
@@ -901,9 +907,8 @@ nav ul li a:hover {
 
     .section7 .photo {
         width: 100%;
-    }
-
-    /* 
+     }
+/* 
     .section7 .info .sec h1 {
         font-size: 18vw;
         line-height: 75px;
@@ -926,7 +931,7 @@ nav ul li a:hover {
 }
 
 @media (max-width: 700px) {
-    .section7 {
+    .section7{
         flex-direction: column;
         overflow: hidden;
     }
@@ -945,18 +950,18 @@ nav ul li a:hover {
         text-align: center;
     }
 
-    .sec7-ul {
+    .sec7-ul{
         padding: 0px 30px;
     }
 
-    .sec7-btn {
-        margin-left: 25px;
+    .sec7-btn{
+       margin-left: 25px;
     }
 
     .section7 .photo {
-        width: 100%;
+       width: 100%;
     }
-
+   
     .section7 .photo img {
         height: 460px;
     }
@@ -1037,11 +1042,11 @@ nav ul li a:hover {
         color: #db4439;
     }
 
-    .storeslider {
+    .storeslider{
         width: 88%;
     }
 
-    .slider-container img {
+    .slider-container img{
         width: 65%;
     }
 
@@ -1051,11 +1056,11 @@ nav ul li a:hover {
 }
 
 @media (max-width: 700px) {
-    .storeslider {
+    .storeslider{
         width: 92%;
     }
 
-    .slider-container img {
+    .slider-container img{
         width: 65%;
     }
 }
@@ -1063,7 +1068,7 @@ nav ul li a:hover {
 
 
 @media (max-width: 700px) {
-    .section5 img {
+    .section5 img{
         width: 200px;
     }
 }
@@ -1154,18 +1159,18 @@ nav ul li a:hover {
         font-size: 38px;
     }
 
-    .section10 .info .sec #buttontoaction {
+    .section10 .info .sec #buttontoaction{
         font-size: 38px;
     }
 }
 
 @media (max-width: 700px) {
-    .section10 {
+    .section10{
         overflow: hidden;
         padding: 2rem 0rem;
     }
 
-    .section10 .info {
+    .section10 .info{
         width: 100%;
         padding: 1rem;
     }
@@ -1326,8 +1331,7 @@ nav ul li a:hover {
     padding: 1rem 0;
     font-family: inter;
 }
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px){
     .footer h4 {
         font-size: 60px;
     }
@@ -1461,7 +1465,7 @@ nav ul li a:hover {
     padding: 10px;
     /* border: 1px solid #ccc; */
     text-align: left;
-    background-color: #ffffff;
+    background-color: #E4DEBE;
     padding: 2rem 2rem;
     border-radius: 30px;
     box-shadow: -5px 5px 0px #762C26;
@@ -1491,53 +1495,62 @@ nav ul li a:hover {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .content img {
-        width: 800px;
+      width: 800px;
     }
-
+ 
     .top-bar .filter-btn {
         padding: 20px 40px;
         font-size: 35px;
     }
 
     #buttontoaction {
-        font-size: 35px;
+     font-size: 35px;
     }
-
-    .content ul {
+ 
+    .content ul{
         padding: 20px;
     }
-
+    
     .content li {
-        font-size: 35px;
-        text-align: justify;
+     font-size: 35px;
+     text-align: justify;
     }
-
+ 
     .content p {
-        font-size: 35px;
-        margin-top: 20px;
-        text-align: justify;
+     font-size: 35px;
+     margin-top: 20px;
+     text-align: justify;
     }
-}
+ }
 
 
 @media (max-width: 700px) {
-    .content img {
-        width: 300px;
+    .section11 h1 {
+        font-size: 50px;
     }
+   .content img {
+     width: 300px;
+   }
 
-    #buttontoaction {
-        padding: 15px 35px;
-    }
+   #buttontoaction {
+    padding: 15px 35px;
+   }
 
-    .content li {
-        text-align: justify;
-    }
+   .content li {
+    text-align: justify;
+   }
 
-    .content p {
-        margin-top: 10px;
-        text-align: justify;
+   .content p {
+    margin-top: 10px;
+    text-align: justify;
+   }
+
+   .top-bar .filter-btn {
+        padding: 8px 16px;
+        font-size: 16px;
     }
 }
+
 
 
 .phero {
@@ -1622,7 +1635,7 @@ nav ul li a:hover {
 
 
 @media only screen and (max-width: 768px) {
-    .custom-fullscreen-overlay {
+    .custom-fullscreen-overlay  {
         display: none;
         position: fixed;
         top: 0;
@@ -1637,9 +1650,18 @@ nav ul li a:hover {
     .custom-fullscreen-image {
         max-width: 90%;
         border-radius: 30px;
-    }
+    } 
+
+    /* outlets */
+   
+}
+.location{
+    margin-bottom: 22px;
 }
 
+.location h1{
+    font-size: 1.7em;
+}
 @media only screen and (max-width: 768px) {
     .custom-close-btn {
         font-size: 80px;
