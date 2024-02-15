@@ -4,15 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Suruchi Foods</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.cdnfonts.com/css/lilita-one" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-</head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="swiper/swiper-bundle.min.css" rel="stylesheet">
+</head> 
+<style>
+.section9 .swiper-slide img {
 
+  /* filter: grayscale(100); */
+}
+
+.section9 .swiper-slide:hover {
+  opacity: 1;
+  filter: none;
+}
+
+.swiper-slide {
+    transition: 0.3s;
+    width: 30%; /* Adjust this width according to your preference */
+}
+</style>
 <body>
     <script>
         $(document).ready(function () {
@@ -48,19 +65,19 @@
         <div class="clear"></div>
     </header>
 
-    <div class="section1">
-        <div class="info">
+    <div class="section1" >
+        <div class="info" data-aos="fade-up">
             <h1>Authentic Regional Street Food with quality</h1>
             <p>Suruchi Foods...</p>
         </div>
-        <div class="pic">
+        <div class="pic" data-aos="fade-up">
             <div class="outer">
                 <img src="images/K.jpg" alt="">
             </div>
         </div>
     </div>
 
-    <div class="section2">
+   <div class="section2">
         <marquee behavior="" direction="" scrollamount="15">
             <p>
                 <span>
@@ -92,7 +109,7 @@
                 industry.
             </p>
         </marquee>
-    </div>
+    </div> 
 
     <!-- commented section start -->
 
@@ -126,13 +143,15 @@
     <!-- commented section end -->
 
     <div class="section6" id="aboutus">
-        <div class="photo">
-            <img src="images/poster2.png" alt="">
+        <div class="photo" >
+            <img src="images/poster2.png" alt="" data-aos="fade-up" data-aos-offset="400"
+            data-aos-easing="ease-in-sine">
         </div>
-        <div class="info">
-            <div class="sec">
-                <h1>About Us</h1>
-                <p>Suruchi Foods, established in 2002 in India, is dedicated to providing high-quality, hygienic, and
+        <div class="info" data-aos="fade-up" data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+            <div class="sec" >
+                <h1 >About Us</h1>
+                <p >Suruchi Foods, established in 2002 in India, is dedicated to providing high-quality, hygienic, and
                     delicious food.
                     Through strategic partnerships and commitment to excellence, it has expanded to 60 malls and 17
                     towns by 2018, employing
@@ -142,14 +161,14 @@
                 </p>
             </div>
             <div class="sec">
-                <h1>Our vision</h1>
-                <p>To give people the pure joy of authentic regional & street food with utmost confidence of flawless
+                <h1 >Our vision</h1>
+                <p >To give people the pure joy of authentic regional & street food with utmost confidence of flawless
                     quality and complete
                     safety.
                 </p>
             </div>
-            <div class="sec">
-                <button id="buttontoaction">
+            <div class="sec" d>
+                <button id="buttontoaction" >
                     View Our Brands
                 </button>
             </div>
@@ -157,22 +176,22 @@
     </div>
 
     <div class="section5">
-        <div class="sec5-1">
-            <h3>Fetured In</h3>
+        <div class="sec5-1" data-aos="zoom-in">
+            <h3 >Fetured In</h3>
         </div>
-        <div class="sec5-2">
-            <img src="https://1000logos.net/wp-content/uploads/2021/06/Zomato-logo.png" alt="">
+        <div class="sec5-2 icons" data-aos="zoom-in">
+            <img src="https://1000logos.net/wp-content/uploads/2021/06/Zomato-logo.png" alt=""  data-aos="zoom-in">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png"
-                alt="">
+                alt=""  data-aos="zoom-in">
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Swiggy_logo.svg/2560px-Swiggy_logo.svg.png"
-                alt="">
+                alt=""  data-aos="zoom-in">
         </div>
     </div>
 
 
     <div class="section7">
         <div class="info">
-            <div class="sec">
+            <div class="sec"  data-aos="fade-up">
                 <h1>STOP BY OUR RESTAURANT</h1>
                 <ul class="sec7-ul">
                     <li>
@@ -187,7 +206,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="sec sec7-btn">
+            <div class="sec sec7-btn"  data-aos="fade-up">
                 <button id="buttontoaction">
                     View Our Portfolio
                 </button>
@@ -196,44 +215,64 @@
         <div class="photo" style="padding: 0px;">
             <img src="images/CHAT PLATER.jpg" id="slider" alt="" style="width: 100%;">
         </div>
-    </div>
+    </div> 
 
     <div class="section8">
-        <h1>
+        <h1  data-aos="fade-up">
             “THE BEST ATTITUDE
             IS GRATITUDE”
         </h1>
-        <p>
+        <p  data-aos="fade-up">
             — SURUCHI FOODS
         </p>
     </div>
 
     <div class="section9">
         <div class="storeslider">
-            <div class="slider-container">
-                <img src="images/11.jpg" alt="Photo 1">
-                <img src="images/22.jpg" alt="Photo 2">
-                <img src="images/33.png" alt="Photo 3">
-                <img src="images/44.png" alt="Photo 3">
-                <img src="images/55.jpg" alt="Photo 3">
-                <img src="images/66.jpg" alt="Photo 3">
+            <div class="slider-container swiper sliderFeaturedPosts">
+                <div class="swiper-wrapper">
+               
+                    <!-- <div class="swiper-slide">
+                        <img src="images/11.jpg" class="swiper-slide" alt="Photo 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/22.jpg" class="swiper-slide" alt="Photo 2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/33.png" class="swiper-slide" alt="Photo 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/44.png" class="swiper-slide" alt="Photo 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/55.jpg" class="swiper-slide" alt="Photo 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/66.jpg" class="swiper-slide" alt="Photo 3">
+                    </div> -->
 
+                    <img src="images/11.jpg" class="swiper-slide" alt="Photo 1">
+                    <img src="images/22.jpg" class="swiper-slide" alt="Photo 2">
+                    <img src="images/44.png" class="swiper-slide" alt="Photo 3">
+                    <img src="images/55.jpg" class="swiper-slide" alt="Photo 3">
+                    <img src="images/66.jpg" class="swiper-slide" alt="Photo 3">
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="section5" style="height: auto;">
-        <div class="sec5-1">
+    <div class="section5 icon" style="height: auto;">
+        <div class="sec5-1"  data-aos="fade-up">
             <h3>We Are Surving In</h3>
         </div>
-        <div class="sec5-2" style="height: auto;">
-            <img src="images/MALLS.png" alt="" style="width: 70%;">
+        <div class="sec5-2" style="height: auto;" data-aos="fade-up">
+            <img src="images/MALLS.png" alt="">
         </div>
     </div>
 
     <div class="section10">
         <div class="info">
-            <div class="sec">
+            <div class="sec"  data-aos="fade-up">
                 <h1>Compelling Growth Opportunity</h1>
                 <p>Leveraging the Collective power of our Brands & Strong Local Presence</p>
 
@@ -251,7 +290,7 @@
                 <p>Build strong social media presence and Marketing campaigns</p>
 
             </div>
-            <div class="sec">
+            <div class="sec"  data-aos="fade-up">
                 <button id="buttontoaction">
                     Read More
                 </button>
@@ -259,9 +298,9 @@
         </div>
     </div>
 
-    <footer class="footer">
+   <footer class="footer">
         <div class="footer-container">
-            <div class="footer-section">
+            <div class="footer-section"  data-aos="fade-up">
                 <h4>Newsletter</h4>
                 <p>Write your Email, we'll reach out to you!</p>
                 <form class="newsletter-form">
@@ -269,17 +308,16 @@
                     <button type="submit">Send</button>
                 </form>
             </div>
-            <div class="footer-section">
+            <div class="footer-section"  data-aos="fade-up">
                 <h4>Quick Links</h4>
                 <ul class="footer-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="ourbrands.html">Our Brands</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="outlets.html">Outlets</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
+            <div class="footer-section"  data-aos="fade-up">
                 <h4>Follow Us</h4>
                 <ul class="social-icons">
                     <li><a href="https://www.instagram.com/chatoree_india?igsh=N2U4MHB2Z2l3YTcw"><i
@@ -292,48 +330,76 @@
                 <p>Unit No.1, Meher Tiles Compound, Subhash Road, Jogeshwari (E), Mumbai - 400060.</p>
             </div>
         </div>
-    </footer>
+    </footer> 
 
-    <div class="copyright">
+    <div class="copyright"  data-aos="fade-up">
         <p>&copy; 2024 Suruchi Foods. All rights reserved.</p>
     </div>
-
-
-
-
-
-
-
-
+    <!-- animation on scroll  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        const imageContainer = document.querySelector('.slider-container');
-        const imageElements = document.querySelectorAll('.slider-container img');
-        const imageWidth = imageElements[0].clientWidth; // Assuming all images have the same width
-        let counter = 1; // Start from the second image
 
-        function slide() {
-            imageContainer.style.transition = 'transform 0.5s ease';
-            imageContainer.style.transform = `translateX(-${imageWidth * counter}px)`;
-            counter++;
+        window.addEventListener('load', () => {
+        AOS.init({
+          duration: 1000,
+          easing: 'ease-in-out',
+          once: true,
+          mirror: false
+        })
+      });
+    </script>
+      
+    <script src="swiper/swiper-bundle.min.js"></script>
+    <script>
+        // old working code starts
+        // const imageContainer = document.querySelector('.slider-container');
+        // const imageElements = document.querySelectorAll('.slider-container img');
+        // const imageWidth = imageElements[0].clientWidth; // Assuming all images have the same width
+        // let counter = 1; // Start from the second image
 
-            // Reset counter to 1 when all images have been displayed
-            if (counter === imageElements.length) {
-                counter = 1;
-                setTimeout(() => {
-                    imageContainer.style.transition = 'none';
-                    imageContainer.style.transform = `translateX(-${imageWidth * counter}px)`;
-                }, 500);
-            }
-        }
+        // function slide() {
+        //     imageContainer.style.transition = 'transform 0.5s ease';
+        //     imageContainer.style.transform = `translateX(-${imageWidth * counter}px)`;
+        //     counter++;
 
-        setInterval(slide, 3000); // Slide every 5 seconds
+        //     // Reset counter to 1 when all images have been displayed
+        //     if (counter === imageElements.length) {
+        //         counter = 1;
+        //         setTimeout(() => {
+        //             imageContainer.style.transition = 'none';
+        //             imageContainer.style.transform = `translateX(-${imageWidth * counter}px)`;
+        //         }, 500);
+        //     }
+        // }
+        // setInterval(slide, 3000); // Slide every 5 seconds
+        // old working code ends
 
+        var swiper = new Swiper(".sliderFeaturedPosts", {
+        spaceBetween: 0,
+        speed: 500,
+        centeredSlides: false,
+        slidesPerView: 'auto',
+        loop: true,
+        slideToClickedSlide: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        // },
+        // navigation: {
+        //     nextEl: ".custom-swiper-button-next",
+        //     prevEl: ".custom-swiper-button-prev",
+        // },
+        });
     </script>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
-        </script>
+    </script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('.mean-toggle').click(function () {
