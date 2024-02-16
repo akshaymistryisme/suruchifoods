@@ -29,8 +29,25 @@
     transition: 0.3s;
     width: 30%; /* Adjust this width according to your preference */
 }
+
+/* custom cursor */
+.custom-cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border:1px solid gray;
+    border-radius: 50%;
+    pointer-events: none; 
+    transition: transform 0.4s cubic-bezier(0.18, 1, 0.28, 1);
+    mix-blend-mode: multiply; 
+    z-index: 1001;
+}
+
+
 </style>
 <body>
+    <div class="custom-cursor"></div>
     <script>
         $(document).ready(function () {
             $("#2002").click(function () {
@@ -297,10 +314,10 @@
             </div>
         </div>
     </div>
-
+    
    <footer class="footer">
         <div class="footer-container">
-            <div class="footer-section"  data-aos="fade-up">
+            <div class="footer-section">
                 <h4>Newsletter</h4>
                 <p>Write your Email, we'll reach out to you!</p>
                 <form class="newsletter-form">
@@ -308,7 +325,7 @@
                     <button type="submit">Send</button>
                 </form>
             </div>
-            <div class="footer-section"  data-aos="fade-up">
+            <div class="footer-section">
                 <h4>Quick Links</h4>
                 <ul class="footer-links">
                     <li><a href="index.html">Home</a></li>
@@ -318,7 +335,7 @@
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="footer-section"  data-aos="fade-up">
+            <div class="footer-section">
                 <h4>Follow Us</h4>
                 <ul class="social-icons">
                     <li><a href="https://www.instagram.com/chatoree_india?igsh=N2U4MHB2Z2l3YTcw"><i
@@ -333,13 +350,41 @@
         </div>
     </footer> 
 
-    <div class="copyright"  data-aos="fade-up">
+    <div class="copyright">
         <p>&copy; 2024 Suruchi Foods. All rights reserved.</p>
     </div>
     <!-- animation on scroll  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cursor = document.querySelector(".custom-cursor");
+            document.addEventListener("mousemove", function (e) {
+                const x = e.clientX;
+                const y = e.clientY;
+                cursor.style.transform = `translate(${x-22}px, ${y-25}px)`;
+            });
+        });
 
+        $("button").hover(function(){
+            $('.custom-cursor').css('width','50px');
+            $('.custom-cursor').css('height','50px');
+        });
+        $("button").mouseleave(function(){
+            $('.custom-cursor').css('width','30px');
+            $('.custom-cursor').css('height','30px');
+        });
+
+        $("a").hover(function(){
+            $('.custom-cursor').css('width','50px');
+            $('.custom-cursor').css('height','50px');
+        });
+        $("a").mouseleave(function(){
+            $('.custom-cursor').css('width','30px');
+            $('.custom-cursor').css('height','30px');
+        });
+      
+    </script>
+    <script>
         window.addEventListener('load', () => {
         AOS.init({
           duration: 1000,
@@ -352,52 +397,21 @@
       
     <script src="swiper/swiper-bundle.min.js"></script>
     <script>
-        // old working code starts
-        // const imageContainer = document.querySelector('.slider-container');
-        // const imageElements = document.querySelectorAll('.slider-container img');
-        // const imageWidth = imageElements[0].clientWidth; // Assuming all images have the same width
-        // let counter = 1; // Start from the second image
-
-        // function slide() {
-        //     imageContainer.style.transition = 'transform 0.5s ease';
-        //     imageContainer.style.transform = `translateX(-${imageWidth * counter}px)`;
-        //     counter++;
-
-        //     // Reset counter to 1 when all images have been displayed
-        //     if (counter === imageElements.length) {
-        //         counter = 1;
-        //         setTimeout(() => {
-        //             imageContainer.style.transition = 'none';
-        //             imageContainer.style.transform = `translateX(-${imageWidth * counter}px)`;
-        //         }, 500);
-        //     }
-        // }
-        // setInterval(slide, 3000); // Slide every 5 seconds
-        // old working code ends
-
         var swiper = new Swiper(".sliderFeaturedPosts", {
-        spaceBetween: 0,
-        speed: 500,
-        centeredSlides: false,
-        slidesPerView: 'auto',
-        loop: true,
-        slideToClickedSlide: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        // pagination: {
-        //     el: ".swiper-pagination",
-        //     clickable: true,
-        // },
-        // navigation: {
-        //     nextEl: ".custom-swiper-button-next",
-        //     prevEl: ".custom-swiper-button-prev",
-        // },
+            spaceBetween: 0,
+            speed: 500,
+            centeredSlides: false,
+            slidesPerView: 'auto',
+            loop: true,
+            slideToClickedSlide: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
         });
     </script>
 
-
+      
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
     </script>
