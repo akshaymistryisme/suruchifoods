@@ -42,7 +42,7 @@ body {
     pointer-events: none; 
     transition: transform 0.4s cubic-bezier(0.18, 1, 0.28, 1);
     mix-blend-mode: multiply; 
-    z-index: 1000;
+    z-index: 1001;
 }
 
 
