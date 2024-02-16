@@ -167,8 +167,8 @@
                     safety.
                 </p>
             </div>
-            <div class="sec" d>
-                <button id="buttontoaction" >
+            <div class="sec">
+                <button id="buttontoaction" onclick="func1()">
                     View Our Brands
                 </button>
             </div>
@@ -207,7 +207,7 @@
                 </ul>
             </div>
             <div class="sec sec7-btn"  data-aos="fade-up">
-                <button id="buttontoaction">
+                <button id="buttontoaction" onclick="func()">
                     View Our Portfolio
                 </button>
             </div>
@@ -314,6 +314,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="ourbrands.html">Our Brands</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="outlets.html">Outlets</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
@@ -407,6 +408,13 @@
                 $('nav').toggleClass('active')
             })
         })
+
+        function func() {
+            window.location ='portfolio.html';
+        }
+        function func1() {
+            window.location ='ourbrands.html';
+        }
     </script>
     <script>
         var images = [
