@@ -116,6 +116,7 @@
 </head>
 
 <body style="background-color: #f1e8db">
+    <div class="custom-cursor"></div>
     <script>
         $(document).ready(function () {
             $("#2002").click(function () {
@@ -151,7 +152,7 @@
     </header>
 
     <div class="section7 contact">
-        <div class="info" data-aos="fade-up">
+        <div class="info">
             <div class="sec">
                 <h1>Contact Us</h1>
                 <b>Address</b>
@@ -167,7 +168,7 @@
                     info@suruchifoods.net
                 </p>
             </div>
-            <div class="sec" data-aos="fade-up">
+            <div class="sec">
                 <ul class="social-icons">
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -186,7 +187,7 @@
 
     <footer class="footer">
         <div class="footer-container">
-            <div class="footer-section" data-aos="fade-up">
+            <div class="footer-section">
                 <h4>Newsletter</h4>
                 <p>Write your Email, we'll reach out to you!</p>
                 <form class="newsletter-form">
@@ -194,7 +195,7 @@
                     <button type="submit">Send</button>
                 </form>
             </div>
-            <div class="footer-section" data-aos="fade-up">
+            <div class="footer-section">
                 <h4>Quick Links</h4>
                 <ul class="footer-links">
                     <li><a href="index.html">Home</a></li>
@@ -204,7 +205,7 @@
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="footer-section" data-aos="fade-up">
+            <div class="footer-section">
                 <h4>Follow Us</h4>
                 <ul class="social-icons">
                     <li><a href="https://www.instagram.com/chatoree_india?igsh=N2U4MHB2Z2l3YTcw"><i
@@ -219,7 +220,7 @@
         </div>
     </footer>
  
-    <div class="copyright" data-aos="fade-up">
+    <div class="copyright">
         <p>&copy; 2024 Suruchi Foods. All rights reserved.</p>
     </div>
 
@@ -299,9 +300,36 @@
         }
 
         setInterval(slide, 5000); // Slide every 5 seconds
-
     </script>
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cursor = document.querySelector(".custom-cursor");
+            document.addEventListener("mousemove", function (e) {
+                const x = e.clientX;
+                const y = e.clientY;
+                cursor.style.transform = `translate(${x-22}px, ${y-25}px)`;
+            });
+        });
 
+        $("button").hover(function(){
+            $('.custom-cursor').css('width','50px');
+            $('.custom-cursor').css('height','50px');
+        });
+        $("button").mouseleave(function(){
+            $('.custom-cursor').css('width','30px');
+            $('.custom-cursor').css('height','30px');
+        });
+
+        $("a").hover(function(){
+            $('.custom-cursor').css('width','50px');
+            $('.custom-cursor').css('height','50px');
+        });
+        $("a").mouseleave(function(){
+            $('.custom-cursor').css('width','30px');
+            $('.custom-cursor').css('height','30px');
+        });
+      
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
