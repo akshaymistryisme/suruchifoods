@@ -1410,6 +1410,7 @@ nav ul li a:hover {
     text-align: center;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .top-bar .filter-btn {
@@ -1665,6 +1666,10 @@ nav ul li a:hover {
 @media only screen and (max-width: 768px) {
     .custom-close-btn {
         font-size: 80px;
+    }
+
+    .location p{
+        text-align: left;
     }
 }
 
