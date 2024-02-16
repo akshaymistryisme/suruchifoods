@@ -30,6 +30,22 @@ body {
     /* background-color: #E4DEBE; */
 }
 
+
+/* custom cursor */
+.custom-cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border:1px solid gray;
+    border-radius: 50%;
+    pointer-events: none; 
+    transition: transform 0.4s cubic-bezier(0.18, 1, 0.28, 1);
+    mix-blend-mode: multiply; 
+    z-index: 1000;
+}
+
+
 header {
     position: relative;
     /* max-width: 90%; */
