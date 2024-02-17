@@ -37,7 +37,7 @@ body {
     width: 30px;
     height: 30px;
     background-color: transparent;
-    border:1px solid gray;
+    border:5px solid gray;
     border-radius: 50%;
     pointer-events: none; 
     transition: transform 0.4s cubic-bezier(0.18, 1, 0.28, 1);
