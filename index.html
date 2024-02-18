@@ -13,39 +13,34 @@
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="swiper/swiper-bundle.min.css" rel="stylesheet">
-</head> 
+</head>
 <style>
-.section9 .swiper-slide img {
+    .section9 .swiper-slide:hover {
+        opacity: 1;
+        filter: none;
+    }
 
-  /* filter: grayscale(100); */
-}
+    .swiper-slide {
+        transition: 0.3s;
+        width: 30%;
+        /* Adjust this width according to your preference */
+    }
 
-.section9 .swiper-slide:hover {
-  opacity: 1;
-  filter: none;
-}
-
-.swiper-slide {
-    transition: 0.3s;
-    width: 30%; /* Adjust this width according to your preference */
-}
-
-/* custom cursor */
-.custom-cursor {
-    position: fixed;
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-    border:1px solid gray;
-    border-radius: 50%;
-    pointer-events: none; 
-    transition: transform 0.4s cubic-bezier(0.18, 1, 0.28, 1);
-    mix-blend-mode: multiply; 
-    z-index: 1001;
-}
-
-
+    /* custom cursor */
+    .custom-cursor {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border: 5px solid var(--one);
+        border-radius: 50%;
+        pointer-events: none;
+        mix-blend-mode: multiply;
+        z-index: 1001;
+        /* transition: 0.2s; */
+    }
 </style>
+
 <body>
     <div class="custom-cursor"></div>
     <script>
@@ -82,19 +77,23 @@
         <div class="clear"></div>
     </header>
 
-    <div class="section1" >
+    <div class="section1">
         <div class="info" data-aos="fade-up">
             <h1>Authentic Regional Street Food with quality</h1>
             <p>Suruchi Foods...</p>
         </div>
         <div class="pic" data-aos="fade-up">
-            <div class="outer">
-                <img src="images/K.jpg" alt="">
+            <div class="scroll-parent">
+                <img src="images/Group 24.png" alt="">
+                <img src="images/Group 25.png" alt="">
+                <img src="images/Group 26.png" alt="">
+                <img src="images/Group 27.png" alt="">
+                <img src="images/Group 28.png" alt="">
             </div>
         </div>
     </div>
 
-   <div class="section2">
+    <div class="section2">
         <marquee behavior="" direction="" scrollamount="15">
             <p>
                 <span>
@@ -126,7 +125,7 @@
                 industry.
             </p>
         </marquee>
-    </div> 
+    </div>
 
     <!-- commented section start -->
 
@@ -160,15 +159,14 @@
     <!-- commented section end -->
 
     <div class="section6" id="aboutus">
-        <div class="photo" >
+        <div class="photo">
             <img src="images/poster2.png" alt="" data-aos="fade-up" data-aos-offset="400"
-            data-aos-easing="ease-in-sine">
+                data-aos-easing="ease-in-sine">
         </div>
-        <div class="info" data-aos="fade-up" data-aos-offset="300"
-        data-aos-easing="ease-in-sine">
-            <div class="sec" >
-                <h1 >About Us</h1>
-                <p >Suruchi Foods, established in 2002 in India, is dedicated to providing high-quality, hygienic, and
+        <div class="info" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <div class="sec">
+                <h1>About Us</h1>
+                <p>Suruchi Foods, established in 2002 in India, is dedicated to providing high-quality, hygienic, and
                     delicious food.
                     Through strategic partnerships and commitment to excellence, it has expanded to 60 malls and 17
                     towns by 2018, employing
@@ -178,8 +176,8 @@
                 </p>
             </div>
             <div class="sec">
-                <h1 >Our vision</h1>
-                <p >To give people the pure joy of authentic regional & street food with utmost confidence of flawless
+                <h1>Our vision</h1>
+                <p>To give people the pure joy of authentic regional & street food with utmost confidence of flawless
                     quality and complete
                     safety.
                 </p>
@@ -194,21 +192,21 @@
 
     <div class="section5">
         <div class="sec5-1" data-aos="zoom-in">
-            <h3 >Fetured In</h3>
+            <h3>Fetured In</h3>
         </div>
         <div class="sec5-2 icons" data-aos="zoom-in">
-            <img src="https://1000logos.net/wp-content/uploads/2021/06/Zomato-logo.png" alt=""  data-aos="zoom-in">
+            <img src="https://1000logos.net/wp-content/uploads/2021/06/Zomato-logo.png" alt="" data-aos="zoom-in">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png"
-                alt=""  data-aos="zoom-in">
+                alt="" data-aos="zoom-in">
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Swiggy_logo.svg/2560px-Swiggy_logo.svg.png"
-                alt=""  data-aos="zoom-in">
+                alt="" data-aos="zoom-in">
         </div>
     </div>
 
 
     <div class="section7">
         <div class="info">
-            <div class="sec"  data-aos="fade-up">
+            <div class="sec" data-aos="fade-up">
                 <h1>STOP BY OUR RESTAURANT</h1>
                 <ul class="sec7-ul">
                     <li>
@@ -223,7 +221,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="sec sec7-btn"  data-aos="fade-up">
+            <div class="sec sec7-btn" data-aos="fade-up">
                 <button id="buttontoaction" onclick="func()">
                     View Our Portfolio
                 </button>
@@ -232,14 +230,14 @@
         <div class="photo" style="padding: 0px;">
             <img src="images/CHAT PLATER.jpg" id="slider" alt="" style="width: 100%;">
         </div>
-    </div> 
+    </div>
 
     <div class="section8">
-        <h1  data-aos="fade-up">
+        <h1 data-aos="fade-up">
             “THE BEST ATTITUDE
             IS GRATITUDE”
         </h1>
-        <p  data-aos="fade-up">
+        <p data-aos="fade-up">
             — SURUCHI FOODS
         </p>
     </div>
@@ -248,7 +246,7 @@
         <div class="storeslider">
             <div class="slider-container swiper sliderFeaturedPosts">
                 <div class="swiper-wrapper">
-               
+
                     <!-- <div class="swiper-slide">
                         <img src="images/11.jpg" class="swiper-slide" alt="Photo 1">
                     </div>
@@ -279,7 +277,7 @@
     </div>
 
     <div class="section5 icon" style="height: auto;">
-        <div class="sec5-1"  data-aos="fade-up">
+        <div class="sec5-1" data-aos="fade-up">
             <h3>We Are Surving In</h3>
         </div>
         <div class="sec5-2" style="height: auto;" data-aos="fade-up">
@@ -289,7 +287,7 @@
 
     <div class="section10">
         <div class="info">
-            <div class="sec"  data-aos="fade-up">
+            <div class="sec" data-aos="fade-up">
                 <h1>Compelling Growth Opportunity</h1>
                 <p>Leveraging the Collective power of our Brands & Strong Local Presence</p>
 
@@ -307,15 +305,15 @@
                 <p>Build strong social media presence and Marketing campaigns</p>
 
             </div>
-            <div class="sec"  data-aos="fade-up">
+            <div class="sec" data-aos="fade-up">
                 <button id="buttontoaction" onclick="func()">
                     Read More
                 </button>
             </div>
         </div>
     </div>
-    
-   <footer class="footer">
+
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
                 <h4>Newsletter</h4>
@@ -348,7 +346,7 @@
                 <p>Unit No.1, Meher Tiles Compound, Subhash Road, Jogeshwari (E), Mumbai - 400060.</p>
             </div>
         </div>
-    </footer> 
+    </footer>
 
     <div class="copyright">
         <p>&copy; 2024 Suruchi Foods. All rights reserved.</p>
@@ -361,40 +359,40 @@
             document.addEventListener("mousemove", function (e) {
                 const x = e.clientX;
                 const y = e.clientY;
-                cursor.style.transform = `translate(${x-22}px, ${y-25}px)`;
+                cursor.style.transform = `translate(${x - 25}px, ${y - 25}px)`;
             });
         });
 
-        $("button").hover(function(){
-            $('.custom-cursor').css('width','50px');
-            $('.custom-cursor').css('height','50px');
+        $("button").hover(function () {
+            $('.custom-cursor').css('width', '50px');
+            $('.custom-cursor').css('height', '50px');
         });
-        $("button").mouseleave(function(){
-            $('.custom-cursor').css('width','30px');
-            $('.custom-cursor').css('height','30px');
+        $("button").mouseleave(function () {
+            $('.custom-cursor').css('width', '30px');
+            $('.custom-cursor').css('height', '30px');
         });
 
-        $("a").hover(function(){
-            $('.custom-cursor').css('width','50px');
-            $('.custom-cursor').css('height','50px');
+        $("a").hover(function () {
+            $('.custom-cursor').css('width', '50px');
+            $('.custom-cursor').css('height', '50px');
         });
-        $("a").mouseleave(function(){
-            $('.custom-cursor').css('width','30px');
-            $('.custom-cursor').css('height','30px');
+        $("a").mouseleave(function () {
+            $('.custom-cursor').css('width', '30px');
+            $('.custom-cursor').css('height', '30px');
         });
-      
+
     </script>
     <script>
         window.addEventListener('load', () => {
-        AOS.init({
-          duration: 1000,
-          easing: 'ease-in-out',
-          once: true,
-          mirror: false
-        })
-      });
+            AOS.init({
+                duration: 1000,
+                easing: 'ease-in-out',
+                once: true,
+                mirror: false
+            })
+        });
     </script>
-      
+
     <script src="swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".sliderFeaturedPosts", {
@@ -411,10 +409,10 @@
         });
     </script>
 
-      
+
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
-    </script>
+        </script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('.mean-toggle').click(function () {
@@ -424,10 +422,10 @@
         })
 
         function func() {
-            window.location ='portfolio.html';
+            window.location = 'portfolio.html';
         }
         function func1() {
-            window.location ='ourbrands.html';
+            window.location = 'ourbrands.html';
         }
     </script>
     <script>
