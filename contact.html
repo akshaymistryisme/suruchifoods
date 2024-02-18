@@ -13,17 +13,18 @@
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-    /* Map */
-    .map-iframe{
-        width: 720px;
-        height: 720px;
-    }
+        /* Map */
+        .map-iframe {
+            width: 720px;
+            height: 720px;
+        }
 
-    .contact .photo{
-        height: 700px;
-    }
-    @media only screen and (max-width: 1024px) {
-        /* .contact{
+        .contact .photo {
+            height: 700px;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            /* .contact{
             text-align: center;
             padding: 2rem;
         }
@@ -38,80 +39,79 @@
             margin-bottom: 10px;
         } */
 
-        .contact .info .sec b{
-            font-size: 40px;
-            margin-top:60px;
+            .contact .info .sec b {
+                font-size: 40px;
+                margin-top: 60px;
+            }
+
+            .contact .info p {
+                font-size: 35px;
+            }
+
+            .section7 .info .sec li a {
+                font-size: 50px;
+            }
+
         }
 
-        .contact .info p{
-            font-size: 35px;
+        @media only screen and (max-width: 950px) {
+            .contact {
+                text-align: center;
+                overflow: hidden;
+                flex-direction: column;
+                padding: 2rem;
+            }
+
+            .contact .photo {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .contact .info {
+                width: 100%;
+                text-align: center;
+            }
+
+            .contact .info .sec h1 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
         }
 
-        .section7 .info .sec li a{
-           font-size: 50px;
+        @media only screen and (max-width: 768px) {
+            .contact {
+                text-align: center;
+                padding: 2rem;
+            }
+
+            .contact .photo {
+                height: 500px;
+                padding-top: 0rem;
+                padding-bottom: 0rem;
+            }
+
+            .contact h1 {
+                margin-bottom: 10px;
+            }
+
+            .contact .info .sec b {
+                font-size: 22px;
+                margin-top: 50px;
+            }
+
+            .contact .info p {
+                font-size: 15px;
+            }
+
+            .section7 .info .sec li a {
+                font-size: 22px;
+            }
+
+            .map-iframe {
+                width: 450px;
+                height: 450px;
+            }
         }
-
-    }
-
-    @media only screen and (max-width: 950px) {
-        .contact{
-            text-align: center;
-            overflow: hidden;
-            flex-direction: column;
-            padding: 2rem;
-        }
-
-        .contact .photo{
-            width: 100%;
-            margin-top: 20px;
-        }
-
-        .contact .info{
-            width: 100%;
-            text-align: center;
-        }
-
-        .contact .info .sec h1{
-            text-align: center;
-            margin-bottom: 20px;
-        }        
-    }  
-
-    @media only screen and (max-width: 768px) {
-        .contact{
-            text-align: center;
-            padding: 2rem;
-        }
-
-        .contact .photo{
-            height: 500px;
-            padding-top: 0rem;
-            padding-bottom: 0rem;
-        }
-        .contact h1{
-            margin-bottom: 10px;
-        }
-
-        .contact .info .sec b{
-            font-size: 22px;
-            margin-top:50px;
-        }
-
-        .contact .info p{
-            font-size: 15px;
-        }
-
-        .section7 .info .sec li a{
-           font-size: 22px;
-        }
-
-        .map-iframe{
-            width: 450px;
-            height: 450px;
-        }
-    }
-
-   
     </style>
 </head>
 
@@ -177,7 +177,7 @@
                 </ul>
             </div>
         </div>
-        <div class="photo" style="background-color: #76251E;" >
+        <div class="photo" style="background-color: var(--three);">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27921.03023125552!2d72.84176474328848!3d19.127494422400275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7d331839529%3A0x1198de198e9a1b62!2sMeher%20Tiles%20Compound%2C%20Station%20Rd%2C%20Subhash%20Nagar%2C%20Jogeshwari%20East%2C%20Mumbai%2C%20Maharashtra%20400060!5e0!3m2!1sen!2sin!4v1707664294425!5m2!1sen!2sin"
                 style="border:0;border-radius: 30px;" allowfullscreen="" loading="lazy"
@@ -219,24 +219,24 @@
             </div>
         </div>
     </footer>
- 
+
     <div class="copyright">
         <p>&copy; 2024 Suruchi Foods. All rights reserved.</p>
     </div>
 
 
-      <!-- animation on scroll  -->
+    <!-- animation on scroll  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
 
-    window.addEventListener('load', () => {
-        AOS.init({
-        duration: 1000,
-        easing: 'ease-in-out',
-        once: true,
-        mirror: false
-        })
-    });
+        window.addEventListener('load', () => {
+            AOS.init({
+                duration: 1000,
+                easing: 'ease-in-out',
+                once: true,
+                mirror: false
+            })
+        });
     </script>
 
     <script>
@@ -301,34 +301,34 @@
 
         setInterval(slide, 5000); // Slide every 5 seconds
     </script>
-     <script>
+    <script>
         document.addEventListener("DOMContentLoaded", function () {
             const cursor = document.querySelector(".custom-cursor");
             document.addEventListener("mousemove", function (e) {
                 const x = e.clientX;
                 const y = e.clientY;
-                cursor.style.transform = `translate(${x-22}px, ${y-25}px)`;
+                cursor.style.transform = `translate(${x - 22}px, ${y - 25}px)`;
             });
         });
 
-        $("button").hover(function(){
-            $('.custom-cursor').css('width','50px');
-            $('.custom-cursor').css('height','50px');
+        $("button").hover(function () {
+            $('.custom-cursor').css('width', '50px');
+            $('.custom-cursor').css('height', '50px');
         });
-        $("button").mouseleave(function(){
-            $('.custom-cursor').css('width','30px');
-            $('.custom-cursor').css('height','30px');
+        $("button").mouseleave(function () {
+            $('.custom-cursor').css('width', '30px');
+            $('.custom-cursor').css('height', '30px');
         });
 
-        $("a").hover(function(){
-            $('.custom-cursor').css('width','50px');
-            $('.custom-cursor').css('height','50px');
+        $("a").hover(function () {
+            $('.custom-cursor').css('width', '50px');
+            $('.custom-cursor').css('height', '50px');
         });
-        $("a").mouseleave(function(){
-            $('.custom-cursor').css('width','30px');
-            $('.custom-cursor').css('height','30px');
+        $("a").mouseleave(function () {
+            $('.custom-cursor').css('width', '30px');
+            $('.custom-cursor').css('height', '30px');
         });
-      
+
     </script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"

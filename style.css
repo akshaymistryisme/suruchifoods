@@ -12,9 +12,9 @@
 
 
 :root {
-    --one: #DB4439;
-    --two: #F1E8DB;
-    --three: #76251E;
+    --one: #FF9800;
+    --two: #FFE6C5;
+    --three: #FF7900;
     --four: #FFFFFF;
 }
 
@@ -112,7 +112,7 @@ nav ul li a {
 nav ul li a.active,
 nav ul li a:hover {
     /* text-shadow: 2px 2px 0px black; */
-    color: #762C26;
+    color: var(--three);
 }
 
 @media (max-width: 1200px) {
@@ -264,6 +264,8 @@ nav ul li a:hover {
     line-height: 130px;
     text-transform: uppercase;
     text-align: left;
+    font-weight: 100;
+    text-shadow: 5px 5px 0px var(--three);
 }
 
 .section1 .info p {
@@ -612,7 +614,7 @@ nav ul li a:hover {
     overflow: hidden;
     /* box-shadow: 0px 0px 20px gray; */
     transition: 0.3s;
-    background-color: #762C26;
+    background-color: var(--three);
     padding: 7rem;
     display: flex;
     justify-content: center;
@@ -1438,7 +1440,7 @@ nav ul li a:hover {
     font-size: 112px;
     color: var(--two);
     font-weight: 100;
-    text-shadow: -5px 5px 0px #762C26;
+    text-shadow: -5px 5px 0px var(--three);
 }
 
 
@@ -1456,7 +1458,7 @@ nav ul li a:hover {
     font-size: 25px;
     cursor: pointer;
     margin: 10px 5px;
-    background-color: #762C26;
+    background-color: var(--three);
     border: none;
     color: var(--two);
     border-radius: 20px;
@@ -1507,7 +1509,7 @@ nav ul li a:hover {
     background-color: var(--two);
     padding: 2rem 2rem;
     border-radius: 30px;
-    box-shadow: -5px 5px 0px #762C26;
+    box-shadow: -5px 5px 0px var(--three);
 }
 
 #buttontoaction {
