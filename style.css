@@ -1833,7 +1833,7 @@ nav ul li a:hover {
   }
 
 
-  .container {
+  .history .container {
     position: relative;
     width: 220px;
     height: 220px;
@@ -1930,7 +1930,7 @@ nav ul li a:hover {
       text-align: center;
     }
 
-    .container{
+    .history .container{
       margin-bottom: 40px;
     }
 
