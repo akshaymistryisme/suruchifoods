@@ -308,9 +308,6 @@ nav ul li a:hover {
 } */
 
 
-
-
-
 .section1 .pic .outer:hover {
     transform: rotate(-10deg) scale(1.06);
 }
@@ -1008,8 +1005,6 @@ nav ul li a:hover {
        margin-left: 25px;
     }
 
-    
-   
     .section7 .photo img {
         height: 460px;
     } */
@@ -1150,8 +1145,6 @@ nav ul li a:hover {
     }
 }
 
-
-
 @media (max-width: 700px) {
     .section5 img {
         width: 200px;
@@ -1273,7 +1266,7 @@ nav ul li a:hover {
     background-color: var(--three);
     color: var(--four);
     padding: 5rem 0;
-    font-weight: 100;
+    font-weight: 500;
     font-family: Inter;
 }
 
@@ -1304,18 +1297,15 @@ nav ul li a:hover {
     flex-direction: column;
 }
 
-
-
 .footer h4 {
-    color: var(--four);
+    color: white;
     margin-bottom: 20px;
     font-size: 2rem;
-    font-weight: 100;
-
+    font-weight: 500;
 }
 
 .footer p {
-    color: #ccc;
+    color: white;
     margin-top: 5px;
     font-family: Inter;
 }
@@ -1329,16 +1319,18 @@ nav ul li a:hover {
 }
 
 .footer-links a {
-    color: #ccc;
+    color: white;
     text-decoration: none;
     font-weight: 500;
     font-family: Inter;
 }
 
 .footer-links a:hover {
-    color: var(--two);
+    color: var(--four);
     text-decoration: none;
-    font-weight: 100;
+    font-weight: 500;
+    filter: brightness(250%);
+    text-shadow: 0 0 2px white, 0 0 2px orange;
 }
 
 .social-icons {
@@ -1350,16 +1342,15 @@ nav ul li a:hover {
 
 .social-icons li {
     display: inline-block;
-    font-weight: 100;
     font-family: Inter;
-
+    font-weight: 500;
 }
 
 .social-icons a {
     color: var(--four);
     text-decoration: none;
     font-size: 25px;
-    font-weight: 100;
+    font-weight: 500;
     margin-right: 10px;
     font-family: Inter;
     transition: 0.2 ease;
@@ -1379,6 +1370,7 @@ nav ul li a:hover {
     flex-direction: column;
     margin-top: 10px;
     font-family: Inter;
+    border-radius: 10px;
 }
 
 .newsletter-form button {
@@ -1391,28 +1383,30 @@ nav ul li a:hover {
     align-items: center;
     flex-direction: column;
     margin-top: 10px;
-    font-weight: 100;
+    border-radius: 10px;
+    font-weight: 500;
 }
 
 .newsletter-form button:hover {
     padding: 10px 20px;
     background-color: var(--three);
     border: none;
-    color: #ccc;
+    color: white;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 10px;
-    font-weight: 100;
+    border : 2px solid white;
+    border-radius: 10px;
 }
 
 .copyright {
     text-align: center;
     width: 100%;
     background-color: var(--three);
-    color: #ccc;
+    color: white;
     font-size: 14px;
     padding: 1rem 0;
     font-family: inter;
@@ -1640,8 +1634,6 @@ nav ul li a:hover {
     }
 }
 
-
-
 .phero {
     margin-inline: auto;
     background-color: var(--one);
@@ -1662,6 +1654,7 @@ nav ul li a:hover {
     /* background-color: var(--one); */
     width: 80%;
     margin-inline: auto;
+    margin-bottom: 35px;
 }
 
 .custom-gallery-item {
@@ -1683,7 +1676,6 @@ nav ul li a:hover {
 .custom-gallery-item img {
     width: 100%;
     height: 100%;
-    height: auto;
     border-radius: 30px;
     transition: 0.2s;
 }
@@ -1694,7 +1686,7 @@ nav ul li a:hover {
     }
 
     .custom-gallery {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 }
 
@@ -1806,7 +1798,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: row;
     padding: 50px;
-    width: 75%;
+    width: 70%;
     /* height: auto; */
     padding: 1rem;
     justify-content: space-between;
@@ -1867,7 +1859,7 @@ nav ul li a:hover {
   .background-circle {
     width: 115%;
     height: 115%;
-    background: conic-gradient(black 222deg, #f1e8db 180deg 360deg);
+    background: conic-gradient(black 222deg, #ffe6c5 180deg 360deg);
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -1980,7 +1972,7 @@ nav ul li a:hover {
        .upcoming-projects .background-circle{
             width: 105%;
             height: 105%;
-            background: conic-gradient(black 222deg, #f1e8db 180deg 360deg);
+            background: conic-gradient(black 222deg, #ffe6c5 180deg 360deg);
             border-radius: 50%;
             position: absolute;
             top: 50%;
@@ -2030,7 +2022,12 @@ nav ul li a:hover {
         height: 150px; /* Adjust the expanded height as needed */
       }
       
-      .upcoming-projects-container  .back-circle:hover::before {
+      .upcoming-container:hover > .back-circle{
+        width: 200px; 
+        height: 150px; 
+      }
+
+      .upcoming-container:hover > .back-circle::before {
         content: attr(data-title); /* Display the data-title attribute content as tooltip text */
         position: absolute;
         top: 0;
@@ -2058,7 +2055,7 @@ nav ul li a:hover {
         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
       }
       
-      .upcoming-projects-container .back-circle:hover::before {
+      .upcoming-container:hover > .back-circle::before {
         opacity: 1;
         transform: scale(1);
       }
@@ -2067,6 +2064,7 @@ nav ul li a:hover {
         font-size: 1.2rem;
         text-align: center;
       }
+      
       
       @media only screen and (max-width: 900px) {
         .upcoming-projects{
@@ -2088,8 +2086,4 @@ nav ul li a:hover {
             margin-bottom: 30px;
         }
       }
-      /* .upcoming-info p{
-        text-align: justify;
-      } */
-
 /* Upcoming Projects ends */
